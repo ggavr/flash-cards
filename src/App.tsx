@@ -1,25 +1,18 @@
+import { LoginForm } from './components/auth/login-form/login-form.tsx'
 import { Button } from './components/ui/button'
 import { Card } from './components/ui/card'
 import { Header } from './components/ui/header/header.tsx'
-import { Label } from './components/ui/label'
-import { TextField } from './components/ui/text-field'
 
 export function App() {
   return (
     <div>
       <Header>
-        <h2>LOGO</h2>
-        <Button variant={'secondary'}>Hi</Button>
+        <h2>Logo</h2>
+        <Button variant={'primary'}>Sign in</Button>
       </Header>
-      <section style={{ marginTop: '7em' }}>
-        <Card style={{ margin: '0 auto' }}>
-          <Button>Hi</Button>
-          <Button variant={'tertiary'} fullWidth={true}>
-            Hi
-          </Button>
-          <TextField search={true} />
-          <TextField />
-          <Label>ddd</Label>
+      <section style={{ display: 'flex', justifyContent: 'center', marginTop: '120px' }}>
+        <Card>
+          <LoginForm />
         </Card>
       </section>
     </div>

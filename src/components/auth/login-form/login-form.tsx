@@ -11,8 +11,8 @@ type FormValues = {
 }
 export const LoginForm = () => {
   const { control, register, handleSubmit } = useForm<FormValues>()
-  const onSubmit = (data: FormValues) => {
-    console.log(data)
+  const onSubmit = () => {
+    // console.log(data)
   }
   const {
     field: { value, onChange },
